@@ -1,0 +1,45 @@
+/* src/components/CategorySlider.css */
+
+/* Style for the custom arrows */
+.slick-prev, .slick-next {
+  font-size: 0; /* Hide the default text */
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.slick-prev {
+  left: -15px;
+}
+.slick-next {
+  right: -15px;
+}
+
+/* Add the arrow icon using pseudo-elements */
+.slick-prev:before, .slick-next:before {
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: black;
+  font-family: 'slick'; /* This is from the slick-carousel font */
+}
+
+.slick-prev:before {
+  content: '←';
+}
+.slick-next:before {
+  content: '→';
+}
